@@ -10,7 +10,7 @@ const CompNavbar = (props) => {
 const Logo = () => {
     return (
         <div className="flex items-center">
-           <img src="./src/assets/Images/logo.png" alt="Logo" className="" />
+           <img src="./src/assets/images/logo.png" alt="Logo" className="" />
         </div>
     )
 }

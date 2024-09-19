@@ -46,14 +46,12 @@ const Avatar = (props) => {
 
 const RatingPrice = () => {
     return (
-        <div className="flex items-center justify-between pt-5 gap-10">
-            <div className="text-yellow-500 font-bold text-xl">⭐⭐⭐⭐⭐</div>
-                <div className="font-bold text-2xl text-green-500" style={{ color: "#3ECF4C" }}>
-                    Rp 300K
-                </div>
-        </div>
+      <div className="flex items-center justify-between pt-5 gap-10">
+        <div className="text-yellow-500 font-bold text-xl">⭐⭐⭐⭐⭐</div>
+        <div style={{ color: "#3ECF4C", fontSize: "2xl", fontWeight: "bold" }}>Rp 300K</div>
+      </div>
     )
-};
+  };
 
 CardCourse.Cardimg = Cardimg;
 CardCourse.TitleDesc = TitleDesc;
