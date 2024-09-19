@@ -6,7 +6,7 @@ const HeroSection = (props) => {
     return (
         <div className="lg:max-w-screen">
         <div className="flex py-5 px-5 flex-wrap">   
-            <div className="lg:w-full rounded-xl text-center bg-cover bg-center" style={{ backgroundImage: "url('./src/assets/Images/bg.png')" }}>
+            <div className="lg:w-full rounded-xl text-center bg-cover bg-center" style={{ backgroundImage: "url('/public/bg.png')" }}>
                 <div className="text-center text-white p-3 sm:p-10 m-10">
                     <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4">{herotitle}</h1>
                     <p className="text-base sm:text-lg md:text-xl mb-6">{herodesc}</p>                 
