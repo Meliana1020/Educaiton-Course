@@ -8,7 +8,7 @@ import ErrorPage from './Pages/error.jsx'
 import HomePage from './Pages/home.jsx'
 
 const router = createBrowserRouter([
-  { path:'/login'  ,
+  { path:'/'  ,
     element:<LoginPage/>
   },
   { path:'/register'  ,
