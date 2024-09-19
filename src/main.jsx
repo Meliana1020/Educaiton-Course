@@ -8,7 +8,7 @@ import ErrorPage from './Pages/error.jsx'
 import HomePage from './Pages/home.jsx'
 
 const router = createBrowserRouter([
-  { path:'/'  ,
+  { path:'/login'  ,
     element:<LoginPage/>
   },
   { path:'/register'  ,
@@ -22,6 +22,7 @@ const router = createBrowserRouter([
     errorElement:<ErrorPage/>
   },
 ])
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router}/>
