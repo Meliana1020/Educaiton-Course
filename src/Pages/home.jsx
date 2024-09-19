@@ -107,7 +107,7 @@ const Cards = [
   id:9,
   image: "/public/course9.png", 
   title: "Big 4 Auditor Financial Analyst",
-  avatar: "/public/Avatar9.png",
+  avatar: "/public/avatar9.png",
   description: `Mulai transformasi dengan 
   instruktur profesional, harga yang terjangkau, dan...`,
 },
