@@ -35,79 +35,79 @@ const HomePage = () => {
 const Cards = [
   {
       id: 1,
-      image: "src/assets/images/course1.png", 
+      image: "/public/course1.png", 
       title: "Big 4 Auditor Financial Analyst",
-      avatar: "src/assets/images/avatar1.png",
+      avatar: "/public/avatar1.png",
       description: `Mulai transformasi dengan 
       instruktur profesional, harga yang terjangkau, dan...`,
   },
   {
     id: 2,
-    image: "src/assets/images/course2.png", 
+    image: "/public/course2.png", 
     title: "Big 4 Auditor Financial Analyst",
-    avatar: "src/assets/images/avatar2.png",
+    avatar: "/public/avatar2.png",
     description: `Mulai transformasi dengan 
     instruktur profesional, harga yang terjangkau, dan...`,
 },
 {
   id: 3,
-  image: "src/assets/images/course3.png", 
+  image: "/public/course3.png", 
   title: "Big 4 Auditor Financial Analyst",
-  avatar: "src/assets/images/avatar3.png",
+  avatar: "/public/avatar3.png",
   description: `Mulai transformasi dengan 
   instruktur profesional, harga yang terjangkau, dan...`,
 },
 
 {
   id: 4,
-  image: "src/assets/images/course4.png", 
+  image: "/public/course4.png", 
   title: "Big 4 Auditor Financial Analyst",
-  avatar: "src/assets/images/avatar4.png",
+  avatar: "/public/avatar4.png",
   description: `Mulai transformasi dengan 
   instruktur profesional, harga yang terjangkau, dan...`,
 },
 
 {
   id: 5,
-  image: "src/assets/images/course5.png", 
+  image: "/public/course5.png", 
   title: "Big 4 Auditor Financial Analyst",
-  avatar: "src/assets/images/avatar5.png",
+  avatar: "/public/avatar5.png",
   description: `Mulai transformasi dengan 
   instruktur profesional, harga yang terjangkau, dan...`,
 },
 
 {
   id: 6,
-  image: "src/assets/images/course6.png", 
+  image: "/public/course6.png", 
   title: "Big 4 Auditor Financial Analyst",
-  avatar: "src/assets/images/avatar6.png",
+  avatar: "/public/avatar6.png",
   description: `Mulai transformasi dengan 
   instruktur profesional, harga yang terjangkau, dan...`,
 },
 
 {
   id: 7,
-  image: "src/assets/images/course7.png", 
+  image: "/public/course7.png", 
   title: "Big 4 Auditor Financial Analyst",
-  avatar: "src/assets/images/avatar7.png",
+  avatar: "/public/avatar7.png",
   description: `Mulai transformasi dengan 
   instruktur profesional, harga yang terjangkau, dan...`,
 },
 
 {
   id: 28,
-  image: "src/assets/images/course8.png", 
+  image: "/public/course8.png", 
   title: "Big 4 Auditor Financial Analyst",
-  avatar: "src/assets/images/avatar8.png",
+  avatar: "/public/avatar8.png",
   description: `Mulai transformasi dengan 
   instruktur profesional, harga yang terjangkau, dan...`,
 },
 
 {
   id:9,
-  image: "src/assets/images/course9.png", 
+  image: "/public/course9.png", 
   title: "Big 4 Auditor Financial Analyst",
-  avatar: "src/assets/images/avatar9.png",
+  avatar: "/public/Avatar9.png",
   description: `Mulai transformasi dengan 
   instruktur profesional, harga yang terjangkau, dan...`,
 },

@@ -50,7 +50,7 @@ const FormRegister = (props) => {
                 </Button>}
               <div className="text-center mt-3">atau</div>
                 <Button variant="bg-white">
-                 <img src="./src/assets/images/google.png" alt="google"/>
+                 <img src="/public/google.png" alt="google"/>
               </Button>
           </div>
           </form>
