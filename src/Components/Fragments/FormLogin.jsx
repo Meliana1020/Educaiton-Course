@@ -1,8 +1,19 @@
 import InputForm from "../Elements/Input/Index";
 import Button from "../Elements/Button/Index";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
 const FormLogin = (props) => {
   const { type } = props;
+  const navigate = useNavigate();
+
+  const handleLogin = () => {
+    navigate("/home");
+  };
+
+  const handleRegister = () => {
+    navigate("/register");
+  };
+
   return (
     <form action="">
       <div className="mb-5">
@@ -19,24 +30,31 @@ const FormLogin = (props) => {
           name="password"
         />
         <div className="text-right mt-2">Lupa Password?</div>
-        <Button variant="bg-green-500" textColor="text-white" size="w-full">
-          <Link to={"/home"}>Masuk</Link>
+        <Button
+          variant="bg-green-500"
+          textColor="text-white"
+          size="w-full"
+          onClick={handleLogin}
+        >
+          Masuk
         </Button>
         {type === "login" ? (
           <Button
             variant="bg-green-100"
             textColor="text-green-800 !important"
             size="w-full"
+            onClick={handleLogin}
           >
-            <Link to="/home">Masuk</Link>
+            Masuk
           </Button>
         ) : (
           <Button
             variant="bg-green-100"
             textColor="text-green-800 !important"
             size="w-full"
+            onClick={handleRegister}
           >
-            <Link to="/register">Daftar</Link>
+            Daftar
           </Button>
         )}
         <div className="text-center mt-3">atau</div>
