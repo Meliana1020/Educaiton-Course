@@ -25,7 +25,7 @@ const FormLogin = (props) => {
         {type === "login" ? (
           <Button
             variant="bg-green-100"
-            textColor="text-green-700"
+            textColor="text-green-800 !important"
             size="w-full"
           >
             <Link to="/home">Masuk</Link>
@@ -33,7 +33,7 @@ const FormLogin = (props) => {
         ) : (
           <Button
             variant="bg-green-100"
-            textColor="text-green-700"
+            textColor="text-green-800 !important"
             size="w-full"
           >
             <Link to="/register">Daftar</Link>

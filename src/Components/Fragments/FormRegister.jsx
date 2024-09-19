@@ -37,16 +37,16 @@ const FormRegister = (props) => {
               { type === 'login' ?  
                 <Button 
                 variant="bg-green-100" 
-                textColor="text-green-700" 
+                textColor="text-green-700 !important" 
                 size="w-full">
                     <Link to="/register">Daftar</Link>
                 </Button>
                 :  
                 <Button 
                 variant="bg-green-100" 
-                textColor="text-green-700" 
+                textColor="text-green-700 !important" 
                 size="w-full">
-                    <Link to="/login">Masuk</Link>
+                    <Link to="/">Masuk</Link>
                 </Button>}
               <div className="text-center mt-3">atau</div>
                 <Button variant="bg-white">
