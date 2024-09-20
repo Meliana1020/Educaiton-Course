@@ -8,7 +8,7 @@ const NavBar = () => {
   };
 
   return (
-    <div className="flex flex-nowrap justify-start gap-4 mb-8 overflow-x-auto">
+    <div className="flex flex-wrap justify-start gap-4 mb-8 overflow-x-auto">
       {['Semua Kelas', 'Pemasaran', 'Desain', 'Pengembangan Diri', 'Bisnis'].map((link) => (
         <a
           key={link}
