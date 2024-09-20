@@ -3,7 +3,7 @@ const Footer = () => {
     <div className="bg-white py-12 px-10">
       <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
         <div>
-          <img className="md:w-[240px]  mb-3" src="/public/logo.png" alt="Logo" />
+          <img className="md:w-[240px]  mb-3" src="/logo.png" alt="Logo" />
           <p className="text-black font-bold">
             Gali Potensi Anda Melalui Pembelajaran Video di hariesok.id!
           </p>
