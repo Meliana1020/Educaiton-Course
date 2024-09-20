@@ -76,7 +76,7 @@ const FormRegister = (props) => {
 
         {/* Button Google Login */}
         <button className="bg-white w-full py-2 px-2 rounded-md flex justify-center items-center">
-          <img src="/public/google.png" alt="google" />
+          <img src="/google.png" alt="google" />
         </button>
       </div>
     </form>
