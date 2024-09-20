@@ -95,7 +95,7 @@ const Cards = [
 },
 
 {
-  id: 28,
+  id: 8,
   image: "/course8.png", 
   title: "Big 4 Auditor Financial Analyst",
   avatar: "/avatar8.png",
@@ -104,7 +104,7 @@ const Cards = [
 },
 
 {
-  id:9,
+  id: 9,
   image: "/course9.png", 
   title: "Big 4 Auditor Financial Analyst",
   avatar: "/avatar9.png",

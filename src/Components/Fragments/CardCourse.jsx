@@ -2,7 +2,7 @@
 const CardCourse = (props) => {
     const { children } = props;
     return (
-        <div className="lg:max-w-screen flex gap-12 pl-2">
+        <div className="lg:max-w-screen flex gap-8 pl-2">
              <div className="lg:w-full p-5 max-w-lg bg-white rounded-lg border shadow-xl">
              {children}
              </div>
