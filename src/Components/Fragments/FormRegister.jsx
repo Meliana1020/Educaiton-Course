@@ -16,7 +16,7 @@ const FormRegister = (props) => {
   };
 
   return (
-    <form action="">
+    <form action="/submit">
       <div className="mb-5">
         <InputForm
           label="Nama Lengkap"
@@ -46,12 +46,10 @@ const FormRegister = (props) => {
 
         <div className="text-right mt-2">Lupa Password?</div>
 
-        {/* Button Daftar */}
         <Button variant="bg-green-500" textColor="text-white" size="w-full" onClick={handleRegister}>
           Daftar
         </Button>
 
-        {/* Conditional Button based on type */}
         {type === "login" ? (
           <Button
             variant="bg-green-100"
@@ -76,7 +74,7 @@ const FormRegister = (props) => {
 
         {/* Button Google Login */}
         <button className="bg-white w-full py-2 px-2 rounded-md flex justify-center items-center">
-          <img src="/google.png" alt="google" />
+          <img src="/google.png" alt="google" type="submit" />
         </button>
       </div>
     </form>

@@ -15,7 +15,7 @@ const FormLogin = (props) => {
   };
 
   return (
-    <form action="">
+    <form action="/submit">
       <div className="mb-5">
         <InputForm
           label="E-mail"
@@ -58,7 +58,7 @@ const FormLogin = (props) => {
           </Button>
         )}
         <div className="text-center mt-3">atau</div>
-        <Button variant="bg-white">
+        <Button variant="bg-white" type="submit">
           <img src="/google.png" alt="google" />
         </Button>
       </div>
