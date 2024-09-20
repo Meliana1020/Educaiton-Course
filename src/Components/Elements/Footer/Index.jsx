@@ -95,10 +95,10 @@ const Footer = () => {
         <div className="container mx-auto px-6 flex flex-col items-center md:flex-row md:justify-between">
           <p className="text-black mb-4 md:mb-0">©2024 by Meliana All Rights Reserved.</p>
           <div className="flex space-x-4">
-            <img src="src/assets/images/linkedin.png" alt="LinkedIn" className="border-gray-300" />
-            <img src="src/assets/images/facebook.png" alt="Facebook" className="border-gray-300" />
-            <img src="src/assets/images/instagram.png" alt="Instagram" className="border-gray-300" />
-            <img src="src/assets/images/twitter.png" alt="Twitter" className="border-gray-300" />
+            <img src="/linkedin.png" alt="LinkedIn" className="border-gray-300" />
+            <img src="/facebook.png" alt="Facebook" className="border-gray-300" />
+            <img src="/instagram.png" alt="Instagram" className="border-gray-300" />
+            <img src="/twitter.png" alt="Twitter" className="border-gray-300" />
           </div>
         </div>
       </div>
