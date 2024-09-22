@@ -2,8 +2,8 @@
 const CardCourse = (props) => {
     const { children } = props;
     return (
-        <div className="lg:max-w-screen flex gap-8 pl-2">
-             <div className="lg:w-full p-5 max-w-lg bg-white rounded-lg border shadow-xl">
+        <div className="lg:w-1/2 sm:w-1/2 max-w-sm flex flex-wrap justify-between items-center gap-12 mb-2">
+             <div className="bg-white p-4 rounded-lg shadow-xl">
              {children}
              </div>
         </div>
@@ -48,7 +48,7 @@ const RatingPrice = () => {
     return (
       <div className="flex items-center justify-between pt-5 gap-10">
         <div className="text-yellow-500 font-bold text-xl">⭐⭐⭐⭐⭐</div>
-        <div style={{ color: "#3ECF4C", fontSize: "2xl", fontWeight: "bold" }}>Rp 300K</div>
+        <div style={{ color: "#3ECF4C"}} className="font-bold text-xl">Rp 300K</div>
       </div>
     )
   };

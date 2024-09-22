@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="bg-white py-12 px-10">
+    <div className="bg-white py-10 px-10">
       <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
         <div>
           <img className="md:w-[240px]  mb-3" src="/logo.png" alt="Logo" />

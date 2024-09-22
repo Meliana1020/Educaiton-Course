@@ -6,8 +6,8 @@ import CardCourse from '../Components/Fragments/CardCourse';
 import Footer from '../Components/Elements/Footer/Index';
 const HomePage = () => {
   return (
-    <div className="bg-white shadow-md mb-7v">
-      <div className="Navigation w-full px-8 py-5 ml-5 bg-white border-b border-[#3a3541]/10 flex justify-between items-center">
+   <div className=''>
+      <div className="Navigation w-full px-8 py-4 bg-white border-b border-[#3a3541]/10 flex justify-between items-center">
             <CompNavbar.Logo/>
             <CompNavbar.Avatar/>
         </div>
@@ -15,7 +15,7 @@ const HomePage = () => {
        herodesc="Temukan ilmu baru yang menarik dan mendalam melalui koleksi video pembelajaran berkualitas tinggi. Tidak hanya itu, Anda juga dapat 
        berpartisipasi dalam latihan interaktif yang akan meningkatkan pemahaman Anda."/>
        <Featured/>
-      <div className='p-5 flex flex-wrap gap-10 justify-center items-center'>
+      <div className='flex flex-wrap gap-12 justify-center items-center'>
          {Cards.map((card) => (
          <CardCourse key={card.id}>
           <CardCourse.Cardimg Cardimg={card.image}/>
