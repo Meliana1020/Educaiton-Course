@@ -1,16 +1,14 @@
-import FormRegister from "../Components/Fragments/FormRegister";
-import AuthLayout from "../Components/Layouts/AuthLayout";
 import CompNavbar from "../Components/Fragments/CompNavbar";
+import RegisterLayout from "../Components/Layouts/RegisterLayout";
+
 const RegisterPage = () => {
     return (
         <>
-        <div className="Navigation w-full px-8 py-4 bg-white border-b border-[#3a3541]/10 flex justify-between items-center">
+        <CompNavbar>
             <CompNavbar.Logo/>
-        </div>
-            <AuthLayout title="Pendaftaran Akun" subtitle="Yuk, daftarkan akunmu sekarang juga!"
-        type="register">
-            <FormRegister />
-        </AuthLayout></>
+        </CompNavbar>
+        <RegisterLayout/>
+        </>
     )
 }
 

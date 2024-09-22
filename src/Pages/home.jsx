@@ -7,10 +7,11 @@ import Footer from '../Components/Elements/Footer/Index';
 const HomePage = () => {
   return (
    <div className=''>
-      <div className="Navigation w-full px-8 py-4 bg-white border-b border-[#3a3541]/10 flex justify-between items-center">
-            <CompNavbar.Logo/>
-            <CompNavbar.Avatar/>
-        </div>
+      <CompNavbar>
+        <CompNavbar.Logo/>
+        <CompNavbar.Avatar/>
+      </CompNavbar>      
+     
       <HeroSection herotitle="Revolusi Pembelajaran: Temukan Ilmu Baru melalui Platform Video Interaktif!"
        herodesc="Temukan ilmu baru yang menarik dan mendalam melalui koleksi video pembelajaran berkualitas tinggi. Tidak hanya itu, Anda juga dapat 
        berpartisipasi dalam latihan interaktif yang akan meningkatkan pemahaman Anda."/>
