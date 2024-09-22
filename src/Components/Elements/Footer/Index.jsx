@@ -93,7 +93,7 @@ const Footer = () => {
       
       <div className="bg-white py-12">
         <div className="container mx-auto px-6 flex flex-col items-center md:flex-row md:justify-between">
-          <p className="text-black mb-4 md:mb-0">©2024 by Meliana All Rights Reserved.</p>
+          <p className="text-black text-center mb-4 md:mb-0">©2024 by Meliana All Rights Reserved.</p>
           <div className="flex space-x-4">
             <img src="/linkedin.png" alt="LinkedIn" className="border-gray-300" />
             <img src="/facebook.png" alt="Facebook" className="border-gray-300" />
