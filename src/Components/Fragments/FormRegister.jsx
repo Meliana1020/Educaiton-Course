@@ -165,7 +165,7 @@ const FormRegister = (props) => {
         className="w-full h-full"
       >
         <div className="flex justify-center items-center w-full h-full">
-          <img src="/public/google.png" alt="google" />
+          <img src="/google.png" alt="google" />
         </div>
       </Button>
     </form>

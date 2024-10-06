@@ -11,7 +11,7 @@ const CardCourse = (props) => {
   
   return (
     <div
-    className="flex flex-col basis-1/3 max-w-sm"
+    className="flex flex-col max-w-sm sm:w-1/2 md:w-1/3"
     onClick={handleCardCourse}
     >
       <div className="bg-white p-4 rounded-lg shadow-xl w-full">
@@ -61,7 +61,7 @@ const Avatar = (props) => {
 const RatingPrice = () => {
   return (
     <div className="flex items-center justify-between pt-5 gap-10">
-      <div className="text-yellow-500 font-bold text-base">⭐⭐⭐⭐⭐</div>
+      <div className="text-yellow-500 font-bold text-xl">⭐⭐⭐⭐⭐</div>
       <div style={{ color: "#3ECF4C" }} className="text-base sm:text-lg md:text-base lg:text-base font-bold">
         Rp 300K
       </div>
