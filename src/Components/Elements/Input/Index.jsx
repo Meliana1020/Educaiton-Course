@@ -1,11 +1,17 @@
 import Label from "./Label"
 import Input from "./Input"
 const InputForm = (props) => {
-    const { label, name, type, placeholder } = props;
+    const { label, name, type, placeholder, value, onChange, readOnly } = props;
     return (
         <div className="mb-3">
-            <Label htmlfor={name}>{label}</Label>
-            <Input name={name} type={type} placeholder={placeholder}/>
+            <Label htmlFor={name}>{label}</Label>
+            <Input 
+            name={name} 
+            type={type} 
+            value={value} 
+            placeholder={placeholder} 
+            onChange={onChange}
+            readOnly={readOnly}/>
         </div>
     )
 }

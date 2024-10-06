@@ -1,30 +1,61 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import LoginPage from './Pages/login.jsx'
-import RegisterPage from './Pages/register.jsx'
-import ErrorPage from './Pages/error.jsx'
-import HomePage from './Pages/home.jsx'
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import './index.css';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import LoginPage from './Pages/login.jsx';
+import RegisterPage from './Pages/register.jsx';
+import ErrorPage from './Pages/error.jsx';
+import HomePage from './Pages/home.jsx';
+import ProfilePage from './Pages/profil.jsx';
+import DetailProductPage from './Pages/detailprduct.jsx';
+import useAuthSync from './Store/useAuthStore.jsx'; // Import useAuthSync
+import DashboardAdmin from './Pages/admin.jsx';
+import PaymentSuccesPage from './Pages/paymentsucces.jsx';
 
 const router = createBrowserRouter([
-  { path:'/'  ,
-    element:<LoginPage/>
+  {
+    path: '/login',
+    element: <LoginPage />
   },
-  { path:'/register'  ,
-    element: <RegisterPage/>
+  {
+    path: '/register',
+    element: <RegisterPage />
   },
-  { path:'/home'  ,
-    element:<HomePage/>
+  {
+    path: '/',
+    element: <HomePage />
   },
-  { path:''  ,
-    element:<ErrorPage/>,
-    errorElement:<ErrorPage/>
+  {
+    path: '/profil',
+    element: <ProfilePage />
   },
-])
+  {
+    path: '/detailproduct',
+    element: <DetailProductPage />
+  },
+  {
+    path: '/paymentsucces',
+    element: <PaymentSuccesPage />
+  },
+  {
+    path: '/admin',
+    element: <DashboardAdmin />
+  },
+  {
+    path: '*',
+    element: <ErrorPage />,
+    errorElement: <ErrorPage />
+  },
+]);
+
+const MainApp = () => {
+  useAuthSync();
+
+  return <RouterProvider router={router} />;
+};
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router}/>
-  </StrictMode>,
-)
+    <MainApp />
+  </StrictMode>
+);
