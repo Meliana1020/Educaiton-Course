@@ -20,6 +20,8 @@ const useAuthStore = create((set) => ({
       localStorage.setItem("users", JSON.stringify(updatedUsers));
       return { users: updatedUsers };
     }),
+
+    //jadi disini
   
   login: (email, password) =>
     set((state) => {
