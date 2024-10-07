@@ -6,9 +6,9 @@ import LoginPage from './Pages/login.jsx';
 import RegisterPage from './Pages/register.jsx';
 import ErrorPage from './Pages/error.jsx';
 import HomePage from './Pages/home.jsx';
-import ProfilePage from './Pages/profil.jsx';
+import ProfilePage from './Pages/profile.jsx';
 import DetailProductPage from './Pages/detailprduct.jsx';
-import useAuthSync from './Store/useAuthStore.jsx'; // Import useAuthSync
+import useAuthSync from './Store/useAuthStore.jsx';
 import DashboardAdmin from './Pages/admin.jsx';
 import PaymentSuccesPage from './Pages/paymentsucces.jsx';
 
@@ -26,7 +26,7 @@ const router = createBrowserRouter([
     element: <HomePage />
   },
   {
-    path: '/profil',
+    path: '/profile',
     element: <ProfilePage />
   },
   {
