@@ -128,6 +128,7 @@ const FormRegister = (props) => {
         textColor="text-white"
         size="w-full"
         type="submit"
+        fontType="font-bold"
         onClick={handleSubmit}
       >
         Daftar
@@ -140,6 +141,7 @@ const FormRegister = (props) => {
             textColor="text-green-800 !important"
             type="button"
             size="w-full"
+            fontType="font-bold"
             onClick={handleLogin}
           >
             Masuk
@@ -149,6 +151,7 @@ const FormRegister = (props) => {
             variant="bg-green-100"
             textColor="text-green-800 !important"
             size="w-full"
+            fontType="font-bold"
             onClick={handleLogin}
           >
             Masuk

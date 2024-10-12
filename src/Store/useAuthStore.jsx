@@ -4,7 +4,7 @@ import { useEffect } from "react";
 const useAuthStore = create((set) => ({
   users: [], 
   currentUser: null,
-
+  
   register: (newUser) =>
     set((state) => {
       const isEmailRegistered = state.users.some(
@@ -20,8 +20,6 @@ const useAuthStore = create((set) => ({
       localStorage.setItem("users", JSON.stringify(updatedUsers));
       return { users: updatedUsers };
     }),
-
-    //jadi disini
   
   login: (email, password) =>
     set((state) => {
