@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import Button from "../Elements/Button/Index";
-import useAuthStore from "../../Store/useAuthStore";
 
 const CompNavbar = () => {
   const navigate = useNavigate();
@@ -109,7 +108,7 @@ const UserNav = () => {
 
 const GuestNav = ({ navigate }) => {
   return (
-    <div className="flex items-center justify-end flex-1 mr-10 gap-5">
+    <div className="flex items-center justify-end flex-1 mr-10 gap-5 mb-3">
       <Button
         variant="bg-green-500"
         textColor="text-white"
