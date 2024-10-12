@@ -103,6 +103,7 @@ const FormProfil = () => {
               type="submit"
               className="w-full h-full"
               textColor="text-white"
+              fontType="font-bold"
             >
               Save Changes
             </Button>

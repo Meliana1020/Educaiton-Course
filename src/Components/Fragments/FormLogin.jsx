@@ -64,6 +64,7 @@ const FormLogin = (props) => {
           variant="bg-green-500"
           textColor="text-white"
           size="w-full"
+          fontType="font-bold"
         >
           Masuk
         </Button>
@@ -72,6 +73,7 @@ const FormLogin = (props) => {
             variant="bg-green-100"
             textColor="text-green-800 !important"
             size="w-full"
+            fontType="font-bold"
           >
             Masuk
           </Button>
@@ -80,6 +82,7 @@ const FormLogin = (props) => {
             variant="bg-green-100"
             textColor="text-green-800 !important"
             size="w-full"
+            fontType="font-bold"
             onClick={handleRegister}
           >
             Daftar

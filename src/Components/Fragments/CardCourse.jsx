@@ -7,14 +7,13 @@ const CardCourse = (props) => {
   const handleCardCourse = () => {
     navigate("/detailproduct");
   };
-
   
   return (
     <div
     className="flex flex-col max-w-sm sm:w-1/2 md:w-1/3"
     onClick={handleCardCourse}
     >
-      <div className="bg-white p-4 rounded-lg shadow-xl w-full">
+      <div className="bg-white p-4 rounded-lg shadow-xl w-full h-full justify-between space-y-4">
         {children}
       </div>
     </div>
@@ -25,7 +24,7 @@ const Cardimg = (props) => {
   const { Cardimg } = props;
   return (
     <>
-      <img src={Cardimg} alt="category" className="pb-5 rounded-lg w-full" />
+      <img src={Cardimg} alt="category" className="w-full h-48 object-cover rounded-md" />
     </>
   );
 };
@@ -33,10 +32,16 @@ const Cardimg = (props) => {
 const TitleDesc = (props) => {
   const { title, Description } = props;
 
+  const truncateDescription = (desc, maxLength = 100) => {
+    if (desc.length > maxLength) {
+      return desc.substring(0, maxLength) + '...';
+    }
+    return desc;
+  };
   return (
     <>
-      <h3 className="pb-2 text-2xl font-bold text-black ">{title}</h3>
-      <p className="text-m text-black w-full">{Description}</p>
+      <h3 className="text-xl font-semibold text-black">{title}</h3>
+      <p className="text-gray-600">{truncateDescription(Description)}</p>
     </>
   );
 };
@@ -44,26 +49,27 @@ const TitleDesc = (props) => {
 const Avatar = (props) => {
   const { avatar } = props;
   return (
-    <div className="flex items-center pt-4">
+    <div className="flex items-center space-x-2">
       <img
         src={avatar}
         alt="Instructor"
         className="w-10 h-10 rounded-full mr-5"
       />
       <div className="flex flex-col">
-        <p className="text-gray-800 text-sm">Instructor Name</p>
+        <p className="text-gray-800 text-sm font-semibold">Instructor Name</p>
         <p className="text-gray-500 text-xs">Instructor Position</p>
       </div>
     </div>
   );
 };
 
-const RatingPrice = () => {
+const RatingPrice = (props) => {
+  const { price } = props;
   return (
-    <div className="flex items-center justify-between pt-5 gap-10">
-      <div className="text-yellow-500 font-bold text-xl">⭐⭐⭐⭐⭐</div>
+    <div className="flex justify-between items-center mt-aut">
+      <div className="flex space-x-1">⭐⭐⭐⭐⭐</div>
       <div style={{ color: "#3ECF4C" }} className="text-base sm:text-lg md:text-base lg:text-base font-bold">
-        Rp 300K
+      $ {price}
       </div>
     </div>
   );
