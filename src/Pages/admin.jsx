@@ -92,7 +92,7 @@ const DashboardAdmin = () => {
         <aside className="flex flex-col w-full md:w-64 bg-white shadow-md p-4 md:fixed md:h-full md:overflow-y-auto">
           <div className="flex items-center justify-center mb-8">
             <img
-              src="/public/logo.png"
+              src="/logo.png"
               alt="Logo"
               className="h-8 cursor-pointer"
               onClick={handleLogoClick}
